@@ -2,13 +2,15 @@ const express = require('express')
 const app = express()
 
 // o express é um framework  orientado a rotas.
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-    res.send("Seja Bem-vindo ao menu app...")
+    res.sendFile(__dirname + "/html/index.html")
 })
 
 app.get('/sobre', (req, res) => {
-    res.send("Minha Página sobre...")
+    // res.send("Minha Página Sobre...")
+    res.sendFile(__dirname + "/html/sobre.html")
 })
 
 app.get('/blog', (req, res) => {
