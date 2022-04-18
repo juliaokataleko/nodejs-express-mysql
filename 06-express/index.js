@@ -19,7 +19,7 @@ app.get('/blog', (req, res) => {
 // formas de tornar as rotas dinamicas
 
 app.get('/ola/:nome/:cargo/:cor', (req, res) => {
-    res.send(`<h1>Olá ${req.params.nome}</h1>\
+    res.send(`<h1>Olá. Seu nome é: ${req.params.nome}</h1>\
     <h2>Séu cargo é:  ${req.params.cargo}\
     <h3>Sua cor favorita é: ${req.params.cor}</h3>`)
 })
