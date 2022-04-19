@@ -21,3 +21,5 @@ INSERT INTO usuarios(nome,email,idade) VALUES(
     "paulakataleko@gmail.com",
     37
 );
+
+DELETE FROM usuarios WHERE idade = 27;
