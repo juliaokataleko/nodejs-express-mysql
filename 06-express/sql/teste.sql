@@ -23,3 +23,5 @@ INSERT INTO usuarios(nome,email,idade) VALUES(
 );
 
 DELETE FROM usuarios WHERE idade = 27;
+
+UPDATE usuarios SET nome = "Teresa Floripa Kataleko" WHERE idade = 24;

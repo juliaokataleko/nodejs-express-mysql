@@ -28,9 +28,6 @@ app.get('/ola/:nome/:cargo/:cor', (req, res) => {
 })
 
 
-
-
-
 // tem que ser sempre a ultima linha
 app.listen(8081, () => {
     console.log("Servidor rodando na url http://localhost:8081/");
