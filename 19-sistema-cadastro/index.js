@@ -21,6 +21,9 @@ app.get('/', async (req, res) => {
     let posts = await Post.findAll({
         order: [['id', 'desc']]
     })
+
+    console.log(posts);
+
     res.render('index', { posts: posts })
         
     // Post.findAll().then((posts) => {
@@ -56,7 +59,7 @@ app.get('/deletar/:id', (req, res) => {
         res.send("Este poste não existe")
     })
  
-    // res.redirect('/')
+    res.redirect('/')
 })
 
 // tem que ser sempre a ultima linha

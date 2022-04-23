@@ -1,0 +1,15 @@
+<h3>Gestão de Postes</h3>
+
+{{#each posts}}
+    <div class="card">
+
+        <div class="card-content">
+            <h4>{{this.dataValues.title}}</h4>
+            <p>{{this.dataValues.content}}</p>
+            <small>{{this.dataValues.createdAt}}</small>
+
+            <a href="/deletar/{{this.dataValues.id}}">Excluir</a>
+        </div>
+        
+    </div>
+{{/each}}
